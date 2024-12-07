@@ -7,7 +7,10 @@ export default defineNuxtConfig({
   modules: [//'@nuxtjs/apollo'//
   '@nuxtjs/tailwindcss', 'nuxt-graphql-client'],
 
-
+  target: 'static',
+  router: {
+    base: 'https://github.com/orabea/dash-nuxt-app.git'
+  }
   
 
   // runtimeConfig: {
