@@ -1,0 +1,23 @@
+query GetUser($id: String!) {
+  user(id: $id) {
+    id
+    name
+    email
+  }
+}
+
+query GetUsers {
+  users {
+    id
+    name
+    email
+  }
+}
+
+mutation CreateUser($input: UserInput!) {
+  createUser(input: $input) {
+    id
+    name
+    email
+  }
+}
